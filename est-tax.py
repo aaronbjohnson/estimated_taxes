@@ -40,6 +40,8 @@ def compute_quarter_payment(remaining_due, quarters_paid):
     return formatted_payment
 
 assert compute_quarter_payment(Decimal('10032.25'), 0) == Decimal('2508.06') 
+assert compute_quarter_payment(Decimal('34534.03'), 3) == Decimal('34534.03')
+assert compute_quarter_payment(Decimal('5000.00'), 2) == Decimal('2500.00')
     
 
 def get_self_employment_tax(income):
